@@ -1,1 +1,80 @@
-{"StartingThumbnailId":"plage","Thumbnails":[{"Id":"plage","Image":{"instanceID":0},"Description":"Tu es a la plage.","Choices":[{"Description":"Se baigner","ThumbnailLinkId":"eau"},{"Description":"Rester.","ThumbnailLinkId":"plage"}]},{"Id":"eau","Image":{"instanceID":0},"Description":"Tu es dans l'eau.","Choices":[{"Description":"Sortir","ThumbnailLinkId":"plage"},{"Description":"Rester.","ThumbnailLinkId":"eau"}]}]}
+{
+  "StartingThumbnailId": "entrée",
+  "Thumbnails": [
+    {
+      "Id": "entrée",
+      "Image": {"instanceID": 0},
+      "Description": "Vous arrivez devant un château lugubre.",
+      "Choices": [
+        {"Description": "Entrer dans le château", "ThumbnailLinkId": "hall"},
+        {"Description": "Faire le tour", "ThumbnailLinkId": "cimetière"}
+      ]
+    },
+    {
+      "Id": "hall",
+      "Image": {"instanceID": 0},
+      "Description": "Le hall est sombre et froid.",
+      "Choices": [
+        {"Description": "Prendre l’escalier", "ThumbnailLinkId": "bibliotheque"},
+        {"Description": "Entrer dans la grande salle", "ThumbnailLinkId": "grandeSalle"}
+      ]
+    },
+    {
+      "Id": "cimetière",
+      "Image": {"instanceID": 0},
+      "Description": "Le cimetière derrière le château est inquiétant.",
+      "Choices": [
+        {"Description": "Inspecter une tombe", "ThumbnailLinkId": "tombe"},
+        {"Description": "Retourner à l’entrée", "ThumbnailLinkId": "entrée"}
+      ]
+    },
+    {
+      "Id": "bibliotheque",
+      "Image": {"instanceID": 0},
+      "Description": "La bibliothèque regorge de livres anciens.",
+      "Choices": [
+        {"Description": "Lire un grimoire", "ThumbnailLinkId": "malédiction"},
+        {"Description": "Chercher un passage secret", "ThumbnailLinkId": "passage"}
+      ]
+    },
+    {
+      "Id": "grandeSalle",
+      "Image": {"instanceID": 0},
+      "Description": "Un festin pourri est servi sur la table.",
+      "Choices": [
+        {"Description": "Manger", "ThumbnailLinkId": "poison"},
+        {"Description": "Ignorer et avancer", "ThumbnailLinkId": "trône"}
+      ]
+    },
+    {
+      "Id": "tombe",
+      "Image": {"instanceID": 0},
+      "Description": "Une main squelettique sort de la tombe et vous attrape.",
+      "Choices": []
+    },
+    {
+      "Id": "malédiction",
+      "Image": {"instanceID": 0},
+      "Description": "Le grimoire vous maudit, vous transformant en statue de pierre.",
+      "Choices": []
+    },
+    {
+      "Id": "passage",
+      "Image": {"instanceID": 0},
+      "Description": "Vous trouvez un passage secret vers une salle au trésor.",
+      "Choices": []
+    },
+    {
+      "Id": "poison",
+      "Image": {"instanceID": 0},
+      "Description": "Le repas était empoisonné. Fin tragique.",
+      "Choices": []
+    },
+    {
+      "Id": "trône",
+      "Image": {"instanceID": 0},
+      "Description": "Vous atteignez la salle du trône, le fantôme du roi vous salue.",
+      "Choices": []
+    }
+  ]
+}

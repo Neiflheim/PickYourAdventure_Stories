@@ -1,1 +1,83 @@
-{"StartingThumbnailId":"volcan","Thumbnails":[{"Id":"volcan","Image":{"instanceID":0},"Description":"Face au volcan.","Choices":[{"Description":"Fuir.","ThumbnailLinkId":"plaine"},{"Description":"Se battre.","ThumbnailLinkId":"volcan"}]},{"Id":"plaine","Image":{"instanceID":0},"Description":"Vous voila dans la plaine.","Choices":[{"Description":"Retourner au volcan.","ThumbnailLinkId":"volcan"},{"Description":"Rester la.","ThumbnailLinkId":"plain"}]}]}
+{
+  "StartingThumbnailId": "navette",
+  "Thumbnails": [
+    {
+      "Id": "navette",
+      "Image": {"instanceID": 0},
+      "Description": "Vous êtes à bord d’une navette spatiale.",
+      "Choices": [
+        {"Description": "Décoller", "ThumbnailLinkId": "orbite"},
+        {"Description": "Explorer la base spatiale", "ThumbnailLinkId": "hangar"}
+      ]
+    },
+    {
+      "Id": "orbite",
+      "Image": {"instanceID": 0},
+      "Description": "La navette entre en orbite autour d’une planète inconnue.",
+      "Choices": [
+        {"Description": "Atterrir", "ThumbnailLinkId": "surface"},
+        {"Description": "Scanner la planète", "ThumbnailLinkId": "anomalie"}
+      ]
+    },
+    {
+      "Id": "hangar",
+      "Image": {"instanceID": 0},
+      "Description": "Le hangar contient d’autres vaisseaux.",
+      "Choices": [
+        {"Description": "Monter dans un autre vaisseau", "ThumbnailLinkId": "explosion"},
+        {"Description": "Revenir à la navette", "ThumbnailLinkId": "navette"}
+      ]
+    },
+    {
+      "Id": "surface",
+      "Image": {"instanceID": 0},
+      "Description": "Vous atterrissez sur une surface désertique.",
+      "Choices": [
+        {"Description": "Explorer les ruines", "ThumbnailLinkId": "ruines"},
+        {"Description": "Installer une base", "ThumbnailLinkId": "colonie"}
+      ]
+    },
+    {
+      "Id": "anomalie",
+      "Image": {"instanceID": 0},
+      "Description": "Les scanners détectent une anomalie énergétique.",
+      "Choices": [
+        {"Description": "S’approcher", "ThumbnailLinkId": "trouNoir"},
+        {"Description": "Ignorer", "ThumbnailLinkId": "orbite"}
+      ]
+    },
+    {
+      "Id": "explosion",
+      "Image": {"instanceID": 0},
+      "Description": "Le vaisseau explose au décollage. Fin brutale.",
+      "Choices": []
+    },
+    {
+      "Id": "ruines",
+      "Image": {"instanceID": 0},
+      "Description": "Vous trouvez des ruines extraterrestres.",
+      "Choices": [
+        {"Description": "Entrer", "ThumbnailLinkId": "artefact"},
+        {"Description": "Repartir", "ThumbnailLinkId": "surface"}
+      ]
+    },
+    {
+      "Id": "colonie",
+      "Image": {"instanceID": 0},
+      "Description": "Vous fondez une colonie prospère sur la planète.",
+      "Choices": []
+    },
+    {
+      "Id": "trouNoir",
+      "Image": {"instanceID": 0},
+      "Description": "Vous êtes aspiré dans un trou noir. Fin mystérieuse.",
+      "Choices": []
+    },
+    {
+      "Id": "artefact",
+      "Image": {"instanceID": 0},
+      "Description": "Vous découvrez un artefact qui décuple vos connaissances.",
+      "Choices": []
+    }
+  ]
+}

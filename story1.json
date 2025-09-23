@@ -1,1 +1,83 @@
-{"StartingThumbnailId":"arbre","Thumbnails":[{"Id":"arbre","Image":{"instanceID":0},"Description":"Voila un arbre.","Choices":[{"Description":"Aller a gauche","ThumbnailLinkId":"arbre"},{"Description":"Aller a droite","ThumbnailLinkId":"foret"}]},{"Id":"foret","Image":{"instanceID":0},"Description":"Voila une foret.","Choices":[{"Description":"Aller dans la foret","ThumbnailLinkId":"foret"},{"Description":"Retourner a a l'arbre.","ThumbnailLinkId":"arbre"}]}]}
+{
+  "StartingThumbnailId": "clairiere",
+  "Thumbnails": [
+    {
+      "Id": "clairiere",
+      "Image": {"instanceID": 0},
+      "Description": "Vous vous réveillez dans une clairière mystérieuse.",
+      "Choices": [
+        {"Description": "Explorer le sentier à gauche", "ThumbnailLinkId": "cabane"},
+        {"Description": "Prendre le chemin à droite", "ThumbnailLinkId": "rivière"}
+      ]
+    },
+    {
+      "Id": "cabane",
+      "Image": {"instanceID": 0},
+      "Description": "Vous trouvez une vieille cabane abandonnée.",
+      "Choices": [
+        {"Description": "Entrer dans la cabane", "ThumbnailLinkId": "coffre"},
+        {"Description": "Continuer plus loin", "ThumbnailLinkId": "montagne"}
+      ]
+    },
+    {
+      "Id": "rivière",
+      "Image": {"instanceID": 0},
+      "Description": "Une rivière traverse la forêt.",
+      "Choices": [
+        {"Description": "Traverser la rivière", "ThumbnailLinkId": "chute"},
+        {"Description": "Suivre la rive", "ThumbnailLinkId": "pont"}
+      ]
+    },
+    {
+      "Id": "coffre",
+      "Image": {"instanceID": 0},
+      "Description": "Un coffre poussiéreux repose au sol.",
+      "Choices": [
+        {"Description": "Ouvrir le coffre", "ThumbnailLinkId": "trésor"},
+        {"Description": "Ignorer et sortir", "ThumbnailLinkId": "montagne"}
+      ]
+    },
+    {
+      "Id": "montagne",
+      "Image": {"instanceID": 0},
+      "Description": "Un sentier monte vers la montagne.",
+      "Choices": [
+        {"Description": "Monter", "ThumbnailLinkId": "sommet"},
+        {"Description": "Redescendre", "ThumbnailLinkId": "clairiere"}
+      ]
+    },
+    {
+      "Id": "chute",
+      "Image": {"instanceID": 0},
+      "Description": "Vous tombez dans une chute d’eau et vous perdez connaissance.",
+      "Choices": []
+    },
+    {
+      "Id": "pont",
+      "Image": {"instanceID": 0},
+      "Description": "Un vieux pont traverse la rivière.",
+      "Choices": [
+        {"Description": "Traverser le pont", "ThumbnailLinkId": "village"},
+        {"Description": "Revenir en arrière", "ThumbnailLinkId": "rivière"}
+      ]
+    },
+    {
+      "Id": "trésor",
+      "Image": {"instanceID": 0},
+      "Description": "Vous trouvez un trésor rempli de pierres précieuses.",
+      "Choices": []
+    },
+    {
+      "Id": "sommet",
+      "Image": {"instanceID": 0},
+      "Description": "Vous atteignez le sommet et contemplez tout le royaume.",
+      "Choices": []
+    },
+    {
+      "Id": "village",
+      "Image": {"instanceID": 0},
+      "Description": "Vous découvrez un petit village caché dans la forêt.",
+      "Choices": []
+    }
+  ]
+}
