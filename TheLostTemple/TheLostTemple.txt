@@ -1,0 +1,123 @@
+{
+  "StoryName": "The Lost Temple",
+  "ImageName": "banner",
+  "StartingThumbnailId": "entrance",
+  "Thumbnails": [
+    {
+      "Id": "entrance",
+      "ImageName": "entrance",
+      "SfxName": "entrance",
+      "MusicName": "entrance",
+      "Description": "You stand at the entrance of the Lost Temple. The air is thick with mystery.",
+      "Choices": [
+        {"Description": "Enter the temple", "ThumbnailLinkId": "hall", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Search the surroundings", "ThumbnailLinkId": "camp", "NeededItemsId": [], "GivenItemsId": ["1"], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "camp",
+      "ImageName": "camp",
+      "SfxName": "camp",
+      "MusicName": "camp",
+      "Description": "You search around and find an explorer’s bag. Inside is a torch.",
+      "Choices": [
+        {"Description": "Go back to the entrance", "ThumbnailLinkId": "entrance", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "hall",
+      "ImageName": "hall",
+      "SfxName": "hall",
+      "MusicName": "hall",
+      "Description": "A vast hall with two paths: one dark corridor, and one stairway leading up.",
+      "Choices": [
+        {"Description": "Take the corridor", "ThumbnailLinkId": "corridor", "NeededItemsId": ["1"], "GivenItemsId": [], "TakenItemsId": ["1"]},
+        {"Description": "Climb the stairs", "ThumbnailLinkId": "stairs", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "corridor",
+      "ImageName": "corridor",
+      "SfxName": "corridor",
+      "MusicName": "corridor",
+      "Description": "With your torch, you light the corridor and discover an old sword.",
+      "Choices": [
+        {"Description": "Take the sword", "ThumbnailLinkId": "trap", "NeededItemsId": [], "GivenItemsId": ["2"], "TakenItemsId": []},
+        {"Description": "Go back to the hall", "ThumbnailLinkId": "hall", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "stairs",
+      "ImageName": "stairs",
+      "SfxName": "stairs",
+      "MusicName": "stairs",
+      "Description": "At the top of the stairs, you find a locked golden door.",
+      "Choices": [
+        {"Description": "Try to force it", "ThumbnailLinkId": "fall", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Search for a key", "ThumbnailLinkId": "altar", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "altar",
+      "ImageName": "altar",
+      "SfxName": "altar",
+      "MusicName": "altar",
+      "Description": "You discover a hidden altar with a shining crystal key.",
+      "Choices": [
+        {"Description": "Take the key", "ThumbnailLinkId": "stairs", "NeededItemsId": [], "GivenItemsId": ["3"], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "trap",
+      "ImageName": "trap",
+      "SfxName": "trap",
+      "MusicName": "trap",
+      "Description": "A hidden trap triggers! A giant statue attacks you.",
+      "Choices": [
+        {"Description": "Fight with the sword", "ThumbnailLinkId": "victory", "NeededItemsId": ["2"], "GivenItemsId": [], "TakenItemsId": ["2"]},
+        {"Description": "Run away", "ThumbnailLinkId": "death", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "fall",
+      "ImageName": "fall",
+      "SfxName": "fall",
+      "MusicName": "fall",
+      "Description": "The door collapses and you fall into a pit. You find a rope.",
+      "Choices": [
+        {"Description": "Climb back up", "ThumbnailLinkId": "stairs", "NeededItemsId": [], "GivenItemsId": ["4"], "TakenItemsId": []},
+        {"Description": "Go deeper", "ThumbnailLinkId": "treasure", "NeededItemsId": ["4"], "GivenItemsId": [], "TakenItemsId": ["4"]}
+      ]
+    },
+    {
+      "Id": "victory",
+      "ImageName": "victory",
+      "SfxName": "victory",
+      "MusicName": "victory",
+      "Description": "You defeat the statue and claim the treasure of the Lost Temple. Victory is yours!",
+      "Choices": []
+    },
+    {
+      "Id": "death",
+      "ImageName": "death",
+      "SfxName": "death",
+      "MusicName": "death",
+      "Description": "You are crushed by the statue. Your journey ends here.",
+      "Choices": []
+    },
+    {
+      "Id": "treasure",
+      "ImageName": "treasure",
+      "SfxName": "treasure",
+      "MusicName": "treasure",
+      "Description": "With the rope, you descend safely and discover the legendary treasure chamber.",
+      "Choices": []
+    }
+  ],
+  "Items": [
+    {"Id": "1", "ItemName": "Torch", "IconName": "torch", "Description": "Lights the corridor."},
+    {"Id": "2", "ItemName": "Sword", "IconName": "sword", "Description": "Defeat the statue."},
+    {"Id": "3", "ItemName": "Crystal Key", "IconName": "key", "Description": "Opens the golden door."},
+    {"Id": "4", "ItemName": "Rope", "IconName": "rope", "Description": "Allows you to descend into the depths."}
+  ]
+}
