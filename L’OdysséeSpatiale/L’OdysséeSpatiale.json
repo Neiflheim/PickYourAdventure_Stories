@@ -6,7 +6,7 @@
     {
       "Id": "navette",
       "ImageName": "navette",
-      "SfxName": "",
+      "SfxName": "slash",
       "MusicName": "",
       "Description": "Vous êtes à bord d’une navette spatiale.",
       "Choices": [
