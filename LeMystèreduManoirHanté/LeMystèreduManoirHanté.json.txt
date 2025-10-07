@@ -1,0 +1,187 @@
+{
+  "StoryName": "Le Mystère du Manoir Hanté",
+  "ImageName": "banner_manoir",
+  "StartingThumbnailId": "entree_manoir",
+  "Thumbnails": [
+    {
+      "Id": "entree_manoir",
+      "ImageName": "entree_manoir",
+      "SfxName": "vent_glacant",
+      "MusicName": "musique_suspense",
+      "Description": "Vous vous tenez devant un vieux manoir délabré. Une aura de mystère et de froid s'en dégage. La porte principale est entrouverte.",
+      "Choices": [
+        {"Description": "Entrer prudemment", "ThumbnailLinkId": "hall_entree", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Faire le tour du manoir", "ThumbnailLinkId": "jardin", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "jardin",
+      "ImageName": "jardin",
+      "SfxName": "bruits_feuilles",
+      "MusicName": "musique_exploration",
+      "Description": "En faisant le tour, vous découvrez un jardin envahi par la végétation et une fenêtre cassée au rez-de-chaussée. Vous trouvez une vieille lanterne cassée et un morceau de tissu avec un étrange symbole.",
+      "Choices": [
+        {"Description": "Entrer par la fenêtre", "ThumbnailLinkId": "bibliotheque", "NeededItemsId": [], "GivenItemsId": ["1", "2"], "TakenItemsId": []},
+        {"Description": "Retourner à la porte principale", "ThumbnailLinkId": "entree_manoir", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "hall_entree",
+      "ImageName": "hall_entree",
+      "SfxName": "grincement_sol",
+      "MusicName": "musique_hall",
+      "Description": "Le hall est sombre et poussiéreux. Deux chemins s'offrent à vous : un escalier monumental et une porte grinçante sur votre gauche.",
+      "Choices": [
+        {"Description": "Monter l'escalier", "ThumbnailLinkId": "etage", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Ouvrir la porte grinçante", "ThumbnailLinkId": "cuisine", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "bibliotheque",
+      "ImageName": "bibliotheque",
+      "SfxName": "pages_tournees",
+      "MusicName": "musique_etude",
+      "Description": "Vous êtes dans une vaste bibliothèque remplie de livres anciens. Au centre se trouve un pupitre avec un journal ouvert. Vous trouvez une clé rouillée.",
+      "Choices": [
+        {"Description": "Lire le journal", "ThumbnailLinkId": "journal", "NeededItemsId": [], "GivenItemsId": ["3"], "TakenItemsId": []},
+        {"Description": "Retourner au hall", "ThumbnailLinkId": "hall_entree", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "journal",
+      "ImageName": "journal",
+      "SfxName": "papier_ancien",
+      "MusicName": "musique_mystere",
+      "Description": "Le journal parle d'un rituel et mentionne une amulette protégeant des esprits. Le texte s'arrête brusquement. Vous comprenez que le morceau de tissu trouvé plus tôt est un indice.",
+      "Choices": [
+        {"Description": "Chercher l'amulette", "ThumbnailLinkId": "rituel", "NeededItemsId": ["2"], "GivenItemsId": [], "TakenItemsId": ["2"]},
+        {"Description": "Quitter la bibliothèque", "ThumbnailLinkId": "bibliotheque", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "cuisine",
+      "ImageName": "cuisine",
+      "SfxName": "cliquetis_vaisselle",
+      "MusicName": "musique_cuisine",
+      "Description": "La cuisine est en désordre. Une odeur étrange persiste. Un tiroir est fermé à clé.",
+      "Choices": [
+        {"Description": "Ouvrir le tiroir avec la clé", "ThumbnailLinkId": "garde_manger", "NeededItemsId": ["3"], "GivenItemsId": [], "TakenItemsId": ["3"]},
+        {"Description": "Retourner au hall", "ThumbnailLinkId": "hall_entree", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "garde_manger",
+      "ImageName": "garde_manger",
+      "SfxName": "grincement_porte",
+      "MusicName": "musique_garde_manger",
+      "Description": "Dans le tiroir, vous trouvez une carte rudimentaire du manoir et une petite fiole d'un liquide brillant. Le garde-manger semble cacher un passage secret.",
+      "Choices": [
+        {"Description": "Chercher le passage secret", "ThumbnailLinkId": "passage_secret", "NeededItemsId": ["4"], "GivenItemsId": [], "TakenItemsId": ["4"]},
+        {"Description": "Retourner à la cuisine", "ThumbnailLinkId": "cuisine", "NeededItemsId": [], "GivenItemsId": ["4"], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "etage",
+      "ImageName": "etage",
+      "SfxName": "plancher_craque",
+      "MusicName": "musique_etage",
+      "Description": "Vous êtes à l'étage. Un long couloir s'étend devant vous avec plusieurs portes. Une forte sensation de présence vous envahit.",
+      "Choices": [
+        {"Description": "Explorer le couloir", "ThumbnailLinkId": "chambre_maitre", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Redescendre", "ThumbnailLinkId": "hall_entree", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "chambre_maitre",
+      "ImageName": "chambre_maitre",
+      "SfxName": "souffle_spectral",
+      "MusicName": "musique_chambre_maitre",
+      "Description": "Vous entrez dans la chambre principale. C'est le cœur des phénomènes paranormaux. Vous sentez une force invisible vous retenir. Vous voyez une clé en argent sur une table de chevet.",
+      "Choices": [
+        {"Description": "Prendre la clé en argent", "ThumbnailLinkId": "salle_bal", "NeededItemsId": [], "GivenItemsId": ["5"], "TakenItemsId": []},
+        {"Description": "Utiliser la fiole", "ThumbnailLinkId": "liberation", "NeededItemsId": ["4"], "GivenItemsId": [], "TakenItemsId": ["4"]}
+      ]
+    },
+    {
+      "Id": "salle_bal",
+      "ImageName": "salle_bal",
+      "SfxName": "valse_lointaine",
+      "MusicName": "musique_valse_hantee",
+      "Description": "La clé en argent ouvre la porte d'une salle de bal immense mais décrépite. Des figures fantomatiques dansent une valse silencieuse. Au centre, un coffre ancien est posé.",
+      "Choices": [
+        {"Description": "Ouvrir le coffre", "ThumbnailLinkId": "tresor_manoir", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Ignorer le coffre et observer les fantômes", "ThumbnailLinkId": "observation_fantomes", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "passage_secret",
+      "ImageName": "passage_secret",
+      "SfxName": "ecoulement_eau",
+      "MusicName": "musique_mystere_profondeur",
+      "Description": "Le passage secret mène à un tunnel souterrain humide. Au bout, une porte en fer cadenassée.",
+      "Choices": [
+        {"Description": "Tenter de forcer la porte", "ThumbnailLinkId": "ecroulement", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []},
+        {"Description": "Chercher un autre chemin", "ThumbnailLinkId": "rituel", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "rituel",
+      "ImageName": "rituel",
+      "SfxName": "chants_lointains",
+      "MusicName": "musique_chant_rituel",
+      "Description": "En suivant le symbole du tissu, vous arrivez à une pièce cachée. Au centre, un autel avec un livre de rituels et une amulette lumineuse.",
+      "Choices": [
+        {"Description": "Prendre l'amulette", "ThumbnailLinkId": "liberation", "NeededItemsId": [], "GivenItemsId": ["6"], "TakenItemsId": []},
+        {"Description": "Lire le livre de rituels", "ThumbnailLinkId": "mal_ancien", "NeededItemsId": [], "GivenItemsId": [], "TakenItemsId": []}
+      ]
+    },
+    {
+      "Id": "ecroulement",
+      "ImageName": "ecroulement",
+      "SfxName": "roches_tombantes",
+      "MusicName": "musique_danger",
+      "Description": "En forçant la porte, le tunnel s'écroule, vous piégeant sous les décombres. Fin de l'aventure.",
+      "Choices": []
+    },
+    {
+      "Id": "liberation",
+      "ImageName": "liberation",
+      "SfxName": "lumiere_brillante",
+      "MusicName": "musique_paix",
+      "Description": "Que vous ayez l'amulette ou la fiole, les esprits du manoir sont apaisés. Le froid disparaît, et une douce lumière envahit le manoir. Vous avez libéré les âmes. Victoire !",
+      "Choices": []
+    },
+    {
+      "Id": "mal_ancien",
+      "ImageName": "mal_ancien",
+      "SfxName": "cris_horribles",
+      "MusicName": "musique_horreur",
+      "Description": "En lisant le livre, vous réveillez un mal ancien. Le manoir vous consume. Fin de l'aventure.",
+      "Choices": []
+    },
+    {
+      "Id": "tresor_manoir",
+      "ImageName": "tresor_manoir",
+      "SfxName": "ouverture_coffre",
+      "MusicName": "musique_richesse",
+      "Description": "Le coffre révèle un trésor inestimable : des pièces d'or, des bijoux et un journal secret du propriétaire. Vous quittez le manoir riche et avec des réponses.",
+      "Choices": []
+    },
+    {
+      "Id": "observation_fantomes",
+      "ImageName": "observation_fantomes",
+      "SfxName": "soupirs_melancoliques",
+      "MusicName": "musique_melancolie",
+      "Description": "Vous restez et observez les fantômes. Leur mélancolie vous envahit. Vous comprenez leur histoire et décidez de rester pour les accompagner. Une fin paisible mais éternelle.",
+      "Choices": []
+    }
+  ],
+  "Items": [
+    {"Id": "1", "ItemName": "Lanterne Cassée", "IconName": "lanterne_cassee", "Description": "Une vieille lanterne qui pourrait être réparée."},
+    {"Id": "2", "ItemName": "Morceau de Tissu Ancien", "IconName": "tissu_ancien", "Description": "Un indice avec un symbole mystérieux."},
+    {"Id": "3", "ItemName": "Clé Rouillée", "IconName": "cle_rouillee", "Description": "Une clé qui pourrait ouvrir un tiroir."},
+    {"Id": "4", "ItemName": "Fiole de Liquide Brillant", "IconName": "fiole_brillante", "Description": "Un liquide qui semble avoir des propriétés spirituelles."},
+    {"Id": "5", "ItemName": "Clé en Argent", "IconName": "cle_argent", "Description": "Une clé élégante pour une porte importante."},
+    {"Id": "6", "ItemName": "Amulette Lumineuse", "IconName": "amulette_lumineuse", "Description": "Une amulette qui protège des esprits."}
+  ]
+}
